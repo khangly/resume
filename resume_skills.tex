@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/khangly/}{\Large Khang Ly}} &  \href{mailto:khangly@berkeley.edu}{khangly@berkeley.edu}\\
+  \href{https://linkedin.com/in/khangly}{linkedin.com/in/khangly} & (626) 618-6969 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California - Berkeley}{Berkeley, CA}
+      {B.S. Electrical Engineering and Computer Sciences;  GPA: 3.97}{Jun. 2018 -- Dec. 2020}
+      \resumeItemListStart
+        \resumeItem{Courses}
+          {Data Structures (CS 61B), Machine Structures (CS 61C), Computer Security (CS 161), Operating Systems and System Programming (CS 162), Efficient Algorithms and Intractable Problems (CS 170), Introduction to Artificial Intelligence (CS 188), Designing Information Devices and Systems (EE 16AB), Probability and Random Processes (EECS 126)}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Pasadena City College}{Pasadena, CA}
+      {Associate degrees;  GPA: 3.92}{Jun. 2016 -- Aug. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Consortium for Data Analytics in Risk (CDAR) at UC Berkeley}{\href{http://cdar.berkeley.edu}{cdar.berkeley.edu}}
+      {Student Assistant}{Oct. 2018 – Present}
+      \resumeItemListStart
+        \resumeItem{Duties}
+          {Manage the the contents of CDAR website. Transferred the website from WordPress to Open Berkeley platform.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    	{Hot Deals Alert}{\href{https://github.com/khangly/HotDealsAlert}{github.com/khangly/HotDealsAlert}}
+    	{In progress}{Summer 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {A web service that notifies people about super hot deals!}
+        \resumeItem{Data Collection}
+          {Deals data are collected using a Python script from the website \href{https://slickdeals.net}{slickdeals.net}.}
+        \resumeItem{Data Analysis}
+          {After a period of three months, data are analyzed with the help of Numpy and Panda.}
+        \resumeItem{Website}
+          {A web interface is still in progress.}
+      \resumeItemListEnd
+    \resumeSubheading
+    	{Handshake Applicator}{\href{https://github.com/khangly/handshook}{github.com/khangly/handshook}}
+    	{Done}{September 2019}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {A Python script that automatically applies jobs on Handshake.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT-----------------
+\section{Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Structures (CS 61B)}{}
+      {Academic Intern}{Summer 2019}
+      \resumeItemListStart
+        \resumeItem{Duties}
+          {Worked as a lab assistant for CS 61B during the summer. Helped students understand data structure concepts during the labs.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Tau Beta Pi}{}
+      {Member}{Spring 2019 - Present}
+    \resumeSubheading
+      {Eta Kappa Nu}{}
+      {Member}{Spring 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{Project}
+          {Redesigned final review slides (rewrote 20 circuits in LaTeX) for a major EE course (EE 16A).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages (from most to least proficient)}
+    	{C, Java, Python, Go, C++, SQL, PHP, JavaScript, Bash Script}
+    \resumeSubItem{Data Structures}
+    	{Various data structures and sorting algorithms}
+    \resumeSubItem{Operating Systems}
+    	{Processes and Threads, Memory, File System, I/O devices, Unix kernel, Networking}
+    \resumeSubItem{Machine Learning}
+    	{Markov Decision Processes, Reinforcement Learning, Logic, Neural Networks}
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jim and Donna Gray Endowment Award}{UC Berkeley}
+      {Recipient}{Spring 2019 - Fall 2019}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Awarded to computer science students completing their junior year who have demonstrated both high scholastic achievement and financial need.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
