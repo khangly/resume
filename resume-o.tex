@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubheadingD}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemD}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/khangly}{\Large Khang Ly}} &  \href{mailto:khangly@berkeley.edu}{khangly@berkeley.edu}\\
+  \href{https://linkedin.com/in/khangly}{linkedin.com/in/khangly} & (626) 618-6969 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California - Berkeley}{Berkeley, CA}
+      {B.S. Electrical Engineering and Computer Sciences;  GPA: \textbf{3.98}}{Jun. 2018 -- Dec 2020}
+      \resumeItemListStart
+        \resumeItem{CS Courses}
+          {Data Structures (CS 61B), Machine Structures (CS 61C), Computer Security (CS 161), Operating Systems and System Programming (CS 162), Algorithms (CS 170), Database Systems (CS 186),  Artificial Intelligence (CS 188), Machine Learning (CS 189), Parallel Programming (CS 194-15)}
+       \resumeItem{EE Courses}
+         {Signals and Systems (EE 120)}
+       \resumeItem{EECS Courses}
+%       Designing Information Devices and Systems (EECS 16AB), 
+         {Probability and Random Processes (EECS 126), Optimization Models (EECS 127), 
+Digital Design and Integrated Circuits FPGA (EECS 151)}
+%	   \resumeItem{Business Courses}
+%	     {Introduction to Finance (UGBA 103), Investments (UGBA 133)}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Pasadena City College}{Pasadena, CA}
+      {Associate degrees;  GPA: 3.92}{Jun. 2016 -- Jun. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+    	{Python, C/C++, Java, Go, SQL, PHP, JavaScript, Bash Script}
+   	\resumeSubItem{Technologies}
+   		{AWS, Bazel, Docker, Kubernetes, Flutter, PySpark}
+   	\resumeSubItem{Computer Science}
+   		{Data Structures, Algorithms, Operating Systems, Machine Learning, Databases}
+%  	\resumeSubItem{Business}
+%   		{Finance, Investments}
+%    \resumeSubItem{Data Structures}
+%    	{Various data structures and sorting algorithms}
+%    \resumeSubItem{Algorithms}
+%    	{Graph Theory, Network Flow, Linear Programming, Dynamic Programming, etc.}
+%    \resumeSubItem{Operating Systems}
+%    	{Processes and Threads, Memory, File System, I/O devices, Unix kernel, Networking, etc.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {Consortium for Data Analytics in Risk (CDAR) at UC Berkeley}{\href{http://cdar.berkeley.edu}{cdar.berkeley.edu}}
+%      {Student Assistant}{Aug. 2020 – Present}
+%      \resumeItemListStart
+%        \resumeItem{Description}
+%       	  {Research on ESG investing.}
+%%          {Manage the the contents of CDAR website. Transferred the website from WordPress to Open Berkeley platform.}
+%      \resumeItemListEnd
+      \resumeSubheading
+        {Theorem LP}{\href{https://www.theoremlp.com/}{theoremlp.com}}
+        {Software Engineer Intern}{Jun. 2020 – Aug. 2020 (8 weeks)}
+        \resumeItemListStart
+          \resumeItemD{Theorem has developed a model that scores loans, mostly 3 to 5 year loans on lending marketplaces. I made an extract, transform, load (ETL) pipeline that scores all the loan data Theorem has (about 5M loans).}
+          \resumeItemD{Discovered and fixed high memory usage of some ETLs. Reduced memory usage more than 90\% for some tasks.}
+          \resumeItemD{Sped up the process of loading external data to Theorem's data warehouse by more than 10 times by making data schema inference and parquet format conversion in the cloud (using AWS Glue).}
+%          \resumeItemD{Worked on a new design for their current data infrastructure to be more efficient and easy to use.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Personal Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheadingD
+    	{Hot Deals Alert}{\href{https://github.com/khangly/HotSD}{github.com/khangly/HotSD}}
+      \resumeItemListStart
+        \resumeItemD
+          {A web service that notifies people about super hot deals!}
+        \resumeItemD
+          {Deals data are collected using a Python script from the website \href{https://slickdeals.net}{slickdeals.net}.}
+        \resumeItemD
+          {Data are then analyzed using Numpy and Panda.}
+%        \resumeItemD
+%          {A web interface is still in progress.}
+      \resumeItemListEnd
+    \resumeSubheadingD
+    	{Handshake Applicator}{\href{https://github.com/khangly/handshook}{github.com/khangly/handshook}}
+      \resumeItemListStart
+        \resumeItemD{A Python script that automatically applies to jobs on Handshake. It fetches jobs on Handshake and determines if a job is easy to apply, then it sends the application.}
+      \resumeItemListEnd
+    \resumeSubheadingD
+    	{Database Scripts}{\href{https://github.com/khangly/CS186Scripts}{github.com/khangly/CS186Scripts}}
+      \resumeItemListStart
+        \resumeItemD{Calculates IOs of many relational database operations, such as hash joins, sort merge joins, nested loop joins.}
+        \resumeItemD{Visualizes dependency graphs and wait for graphs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT-----------------
+\section{Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Data Structures (CS 61B)}{}
+      {Academic Intern}{Summer 2019}
+%      \resumeItemListStart
+%        \resumeItemD
+%          {Taught students data structure concepts during labs.}
+%      \resumeItemListEnd
+    \resumeSubheading
+      {Tau Beta Pi, Eta Kappa Nu}{}
+      {Member}{Spring 2019 - Present}
+%    \resumeSubheading
+%      {Eta Kappa Nu}{}
+%      {Member}{Spring 2019 - Present}
+%      \resumeItemListStart
+%        \resumeItem{Project}
+%          {Redesigned final review slides (rewrote 20 circuits in LaTeX) for a major EE course (EE 16A).}
+%      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jim and Donna Gray Endowment Award}{UC Berkeley}
+      {Recipient}{Spring 2019 - Fall 2019}
+      \resumeItemListStart
+        \resumeItemD
+          {Awarded to computer science students completing their junior year who have demonstrated both high scholastic achievement and financial need.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
